@@ -1,2 +1,1 @@
-# odoomigrationtest
-odoomigrationtest
+test odoo
