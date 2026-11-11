@@ -4,14 +4,14 @@
     <t t-name="x_pos_partner_vat.PartnerLine" t-inherit="point_of_sale.PartnerLine" t-inherit-mode="extension">
         <!-- Mobile card: VAT under phone/email -->
         <xpath expr="//div[hasclass('partner-line-email')]" position="inside">
-            <div class="partner-line-vat mb-1" t-if="props.partner.vat">
-                <i class="fa fa-fw fa-id-card-o me-2"/>VAT: <t t-esc="props.partner.vat"/>
+            <div class="partner-line-vat mb-1" t-if="this.props.partner.vat">
+                <i class="fa fa-fw fa-id-card-o me-2"/>VAT: <t t-out="this.props.partner.vat"/>
             </div>
         </xpath>
         <!-- Desktop row: VAT cell after phone/email -->
         <xpath expr="//td[hasclass('partner-line-email')]" position="after">
             <td class="partner-line-vat text-break">
-                <t t-if="props.partner.vat"><t t-esc="props.partner.vat"/></t>
+                <t t-if="this.props.partner.vat"><t t-out="this.props.partner.vat"/></t>
             </td>
         </xpath>
     </t>
