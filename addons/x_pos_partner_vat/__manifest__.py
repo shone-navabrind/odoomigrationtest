@@ -1,6 +1,6 @@
 {
     'name': 'POS Customer VAT in Customer List',
-    'version': '20.1.0.0',
+    'version': '20.0.1.0.0',
     'summary': "Show the customer's VAT number in the POS customer list screen",
     'category': 'Point of Sale',
     'author': 'Custom',
